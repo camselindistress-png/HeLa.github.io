@@ -1,0 +1,244 @@
+/* Global Styles */
+body {
+    font-family: 'Baskerville', serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: white;
+}
+
+/* Heading Styles */
+h1 {
+    font-family: 'Baskerville', serif;
+    font-size: 2rem; /* Adjust as needed */
+    background: linear-gradient(to right, #fb2349, #c0160a); /* Original gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2, h3, h4 {
+    font-family: 'Baskerville', serif;
+    font-size: 2rem; /* Adjust as needed */
+    background: linear-gradient(to right, #c90628, black); /* Original gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* General Link Styles */
+a {
+    text-decoration: none;
+    color: black; /* Default link color */
+    transition: all 3s ease; /* Smooth transition */
+}
+
+a:hover {
+    color: black; /* White on hover */
+}
+
+a:active, a:focus {
+    color: black; /* Black when clicked or focused */
+    font-weight: bold; /* Bold on click/focus */
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: url('MAIN.png') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensure content aligns with the top */
+}
+
+.header-content {
+    flex-grow: 1; /* Allows the content to take more space */
+    margin-top: 7rem; /* Adjust this value as needed */
+}
+
+.header-content h1 {
+    font-size: 3rem;
+}
+
+.header-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+/* Navigation Links Styles */
+nav ul li a {
+    text-decoration: underline; /* Add underline by default */
+    color: #6b0d06; /* Default link color */
+    font-size: 1.2rem;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: black; /* Change color to black on hover */
+    text-decoration: underline; /* Ensure underline persists on hover */
+}
+
+nav ul li a:active, nav ul li a:focus {
+    color: black; /* Black when clicked or focused */
+    font-weight: bold; /* Bold on click/focus */
+}
+
+/* Section Styles */
+.section-content {
+    padding: 0.5rem; /* Reduce padding */
+    background-color: #ff5769;
+    margin: 0.5rem; /* Reduce margin */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+/* Timeline Styles */
+.timeline ul {
+    padding-left: 20px;
+}
+
+.timeline li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f36900;
+    color: white;
+}
+
+footer a {
+    color: white; /* Default footer link color */
+    text-decoration: none; /* Removes underline */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+footer a:hover {
+    color: black; /* Changes to black on hover */
+    font-weight: bold; /* Makes the text bold on hover */
+}
+
+footer a:active, footer a:focus {
+    color: black; /* Black when clicked or focused */
+    font-weight: bold; /* Bold when clicked/focused */
+}
+
+/* Resources Links Styles */
+#resources a {
+    color: white; /* Default link color for Resources */
+    text-decoration: underline; /* Underline by default */
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+#resources a:hover {
+    color: black; /* Changes to black on hover */
+    font-weight: bold; /* Makes the text bold on hover */
+}
+
+#resources a:active, #resources a:focus {
+    color: black; /* Black when clicked or focused */
+    font-weight: bold; /* Bold when clicked/focused */
+}
+/* Resources Section Styles */
+#resources {
+    margin: 0.5rem; /* Reduce margin */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: pink; /* Pink compartment background */
+    padding: 20px; /* Padding inside the pink compartment */
+    border-radius: 10px; /* Optional: rounded corners for a soft look */
+}
+
+#resources .section-content {
+    flex: 1; /* Ensures content takes up the available space */
+}
+
+#resources .resources-image {
+    margin-left: 20px; /* Space between text and image */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+#resources .resources-image img {
+    max-width: 200px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+
+
+
+
+/* Gallery Styles */
+#gallery {
+    overflow: hidden;
+    background-color: white; /* Adjust background color */
+    padding: 2rem 0;
+    position: relative;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 20s linear infinite; /* Controls speed and looping */
+    will-change: transform;
+}
+
+.gallery-item {
+    text-align: center;
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 200px; /* Adjust width as needed */
+    color: white;
+}
+
+.gallery-item img {
+    width: 100%;
+    border: 1px solid black; /* Optional border */
+    border-radius: 8px; /* Optional rounded corners */
+    object-fit: cover; /* Keeps aspect ratio */
+}
+
+.gallery-item p {
+    margin-top: 0.5rem;
+    font-size: 1rem; /* Adjust text size */
+    color: black;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
